@@ -1,1 +1,15 @@
-<p>footer works!</p>
+
+<div class=" footer">
+    <h3>Contacto</h3>
+    
+    <mat-form-field>
+        <input matInput [formControl]="email" placeholder="ingresa tu correo" type="email">
+    </mat-form-field>
+    
+    <button mat-raised-button [disabled]="email.invalid" (click)="EnviarEmail()">Enviar</button>
+    
+  </div>
+
+
+
+  
